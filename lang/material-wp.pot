@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: material-wp 1.0.3\n"
+"Project-Id-Version: material-wp 1.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 17:52-0300\n"
+"POT-Creation-Date: 2019-06-21 21:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -495,38 +495,38 @@ msgid ""
 "all."
 msgstr ""
 
-#: ../inc/settings.php:452
+#: ../inc/settings.php:454
 msgid "Users to Apply"
 msgstr ""
 
-#: ../inc/settings.php:453
+#: ../inc/settings.php:455
 msgid ""
 "Select the user to apply Material WP. Do not select anything to apply to all."
 msgstr ""
 
-#: ../inc/settings.php:468
+#: ../inc/settings.php:470
 msgid "Help and Screen Options Tab"
 msgstr ""
 
-#: ../inc/settings.php:469
+#: ../inc/settings.php:471
 msgid ""
 "Change the visibility of the Help and Screen Options tab of the WordPress "
 "admin."
 msgstr ""
 
-#: ../inc/settings.php:476
+#: ../inc/settings.php:478
 msgid "Display Help Tab"
 msgstr ""
 
-#: ../inc/settings.php:477
+#: ../inc/settings.php:479
 msgid "Use this option to change the visibility of the Help tab."
 msgstr ""
 
-#: ../inc/settings.php:485
+#: ../inc/settings.php:487
 msgid "Display Screen Options Tab"
 msgstr ""
 
-#: ../inc/settings.php:486
+#: ../inc/settings.php:488
 msgid "Use this option to change the visibility of the Screen Options tab."
 msgstr ""
 

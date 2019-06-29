@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/hypericumimpex/hyp-uix/
  * Text Domain: material-wp
  * Description: Material UI.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Romeo C.
  * Author URI: https://github.com/hypericumimpex/hyp-uix
  * Copyright: Hypericum.
@@ -100,7 +100,7 @@ class MaterialWP extends NextPress_Theme_Factory {
 
         // We need to check if this is network
         if (!is_network_admin() && $wp_admin_bar->get_node('comments')) {
-            // Commnets
+            // Comments
             $comments_node = $wp_admin_bar->get_node('comments');
             // Add classes
             $comments_node->meta['class'] = 'force-mdi';
@@ -114,7 +114,7 @@ class MaterialWP extends NextPress_Theme_Factory {
                 'meta' => $comments_node->meta,
             ];
 
-            // Editted commnets
+            // Edited comments
             $wp_admin_bar->add_node($comments);
         } // end if;
 

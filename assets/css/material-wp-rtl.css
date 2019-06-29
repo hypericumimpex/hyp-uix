@@ -7094,14 +7094,19 @@ body div#wpcontent {
   z-index: 10; }
 
 #screen-options-link-wrap,
-#contextual-help-link-wrap {
+#contextual-help-link-wrap,
+#mwp-expand-button {
   background: none !important;
   border: none;
-  color: transparent !important; }
-  #screen-options-link-wrap button.button.show-settings,
+  color: transparent !important;
+  float: left; }
+  #screen-options-link-wrap button.button,
+  #contextual-help-link-wrap button.button,
+  #mwp-expand-button button.button {
+    background: transparent !important; }
   #screen-options-link-wrap button.button.show-settings,
   #contextual-help-link-wrap button.button.show-settings,
-  #contextual-help-link-wrap button.button.show-settings {
+  #mwp-expand-button button.button.show-settings {
     padding: 10px;
     outline: none;
     box-shadow: none !important;
@@ -7109,14 +7114,16 @@ body div#wpcontent {
     text-transform: uppercase;
     font-size: 11px; }
   #screen-options-link-wrap #contextual-help-link::after,
-  #contextual-help-link-wrap #contextual-help-link::after {
+  #contextual-help-link-wrap #contextual-help-link::after,
+  #mwp-expand-button #contextual-help-link::after {
     color: #fff;
     content: "\f059";
     font-family: "FontAwesome";
     padding-right: 10px;
     vertical-align: inherit; }
   #screen-options-link-wrap #show-settings-link::after,
-  #contextual-help-link-wrap #show-settings-link::after {
+  #contextual-help-link-wrap #show-settings-link::after,
+  #mwp-expand-button #show-settings-link::after {
     color: #fff;
     content: "\f013";
     font-family: "FontAwesome";
@@ -7440,6 +7447,9 @@ body.zero-bs-page #zerobs-customer-tags-box {
 body.zero-bs-page #zbs-edit-save {
   float: left; }
 
+#wp-auth-check-wrap .wp-auth-check-close {
+  z-index: 999; }
+
 #mwp-plus-button {
   position: fixed;
   bottom: 04px;
@@ -7617,9 +7627,15 @@ body.mwp-expanded #adminmenu {
  */
 #wp-auth-check-wrap #wp-auth-check {
   padding: 0 !important; }
+  #wp-auth-check-wrap #wp-auth-check button.wp-auth-check-close.button-link::before {
+    color: #333; }
 
 body.interim-login {
-  padding-bottom: 20px !important; }
+  height: 100vh; }
+
+body.interim-login #login {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
 
 #wp-auth-check-wrap #wp-auth-check-form iframe {
   height: 100%; }

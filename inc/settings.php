@@ -427,9 +427,11 @@ $func->createOption(array(
   'select_all' => true,
 ));
 
-$users = get_users(array(
+global $pagenow;
+
+$users = $pagenow == 'admin.php' && isset($_GET['page']) && $_GET['page'] == 'material-wp_settings' ? get_users(array(
   'blog_id' => get_current_blog_id(),
-));
+)) : array();
 
 $user_options = array();
 

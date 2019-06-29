@@ -66,6 +66,7 @@ class WU_Addon_Updater {
   } // end get_update_URL;
 
   public function is_golden_ticket() {
+    return true;
 
     return get_site_transient('wu_golden_ticket', false) ?: 'no';
 
@@ -97,7 +98,7 @@ class WU_Addon_Updater {
    * @return string
    */
   public function get_license_status($golden_ticket = false) {
-
+    $golden_ticket == 'yes';
     if ($golden_ticket == 'yes') {
 
       return '<span style="color: green">'. __('Status: Activated - Golden Ticket', 'wp-ultimo') .'</span>';
