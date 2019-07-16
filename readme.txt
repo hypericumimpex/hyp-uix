@@ -21,7 +21,16 @@ Completely transform your admin interface with the Google's Material Design styl
 
 == Changelog ==
 
-Version 1.0.4 - 
+Version 1.0.6 - 12/07/2019
+
+* Improved: Removed "Apply to users" when in network mode to prevent performance hiccups;
+* Improved: Added an option to exclude Super Admins on the role settings;
+
+Version 1.0.5 - 30/06/2019
+
+* Fixed: Updater not working as WP Ultimo add-on;
+
+Version 1.0.4 - 20/06/2019
 
 * Fixed: Small issues with the interim login modal window on the admin;
 * Fixed: Removed unecessary queries that were being performed on every page load;

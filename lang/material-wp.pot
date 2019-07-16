@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: material-wp 1.0.4\n"
+"Project-Id-Version: material-wp 1.0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-21 21:38-0300\n"
+"POT-Creation-Date: 2019-07-12 11:21-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../material-wp.php:40 ../inc/np-theme-factory.php:53
+#: ../material-wp.php:40 ../inc/np-theme-factory.php:70
 msgid ""
 "You are about to permanently delete the selected items.\n"
 "  'Cancel' to stop, 'OK' to delete."
 msgstr ""
 
-#: ../material-wp.php:41 ../inc/np-theme-factory.php:54
+#: ../material-wp.php:41 ../inc/np-theme-factory.php:71
 msgid "Dismiss this notice."
 msgstr ""
 
-#: ../material-wp.php:42 ../inc/np-theme-factory.php:55
+#: ../material-wp.php:42 ../inc/np-theme-factory.php:72
 msgid "Expand / Compress Stage"
 msgstr ""
 
@@ -86,7 +86,7 @@ msgid ""
 "purchase."
 msgstr ""
 
-#: ../inc/np-theme-factory.php:170
+#: ../inc/np-theme-factory.php:228
 msgid ""
 "It seems that you have a permission error on your server. Material WP "
 "generates static style files, so it needs to be able to write onto the "
@@ -94,14 +94,14 @@ msgid ""
 "chmod."
 msgstr ""
 
-#: ../inc/np-theme-factory.php:438
+#: ../inc/np-theme-factory.php:620
 msgid ""
 "Something in your Material WP options may be causing SCSS compiling errors. "
 "Please verify if all of your options have correct values (a color field, for "
 "example, can not contain a value different of a hex code (#fff))"
 msgstr ""
 
-#: ../inc/np-theme-factory.php:459
+#: ../inc/np-theme-factory.php:648
 msgid "Your custom CSS (with SCSS) code has some syntax error. Please verify."
 msgstr ""
 
@@ -485,48 +485,52 @@ msgid ""
 "Material WP styles. One URL per line."
 msgstr ""
 
-#: ../inc/settings.php:422
+#: ../inc/settings.php:423
+msgid "Super Administrator"
+msgstr ""
+
+#: ../inc/settings.php:430
 msgid "Roles to Apply"
 msgstr ""
 
-#: ../inc/settings.php:423
+#: ../inc/settings.php:431
 msgid ""
 "Select the roles to apply Material WP. Do not select anything to apply to "
 "all."
 msgstr ""
 
-#: ../inc/settings.php:454
+#: ../inc/settings.php:464
 msgid "Users to Apply"
 msgstr ""
 
-#: ../inc/settings.php:455
+#: ../inc/settings.php:465
 msgid ""
 "Select the user to apply Material WP. Do not select anything to apply to all."
 msgstr ""
 
-#: ../inc/settings.php:470
+#: ../inc/settings.php:482
 msgid "Help and Screen Options Tab"
 msgstr ""
 
-#: ../inc/settings.php:471
+#: ../inc/settings.php:483
 msgid ""
 "Change the visibility of the Help and Screen Options tab of the WordPress "
 "admin."
 msgstr ""
 
-#: ../inc/settings.php:478
+#: ../inc/settings.php:490
 msgid "Display Help Tab"
 msgstr ""
 
-#: ../inc/settings.php:479
+#: ../inc/settings.php:491
 msgid "Use this option to change the visibility of the Help tab."
 msgstr ""
 
-#: ../inc/settings.php:487
+#: ../inc/settings.php:499
 msgid "Display Screen Options Tab"
 msgstr ""
 
-#: ../inc/settings.php:488
+#: ../inc/settings.php:500
 msgid "Use this option to change the visibility of the Screen Options tab."
 msgstr ""
 

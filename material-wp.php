@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/hypericumimpex/hyp-uix/
  * Text Domain: material-wp
  * Description: Material UI.
- * Version: 1.0.4
+ * Version: 1.0.6
  * Author: Romeo C.
  * Author URI: https://github.com/hypericumimpex/hyp-uix
  * Copyright: Hypericum.

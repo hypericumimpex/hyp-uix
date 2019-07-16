@@ -6447,6 +6447,9 @@ strong .post-com-count:after {
 strong .post-com-count span {
   background-color: #69a8bb; }
 
+.wp-list-table td.column-title strong, .wp-list-table td.plugin-title strong {
+  word-break: break-word; }
+
 /* Pointers */
 .wp-pointer .wp-pointer-content h3 {
   background-color: #2296F3;

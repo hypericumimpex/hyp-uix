@@ -417,6 +417,14 @@ $role_options = array_map(function($item) {
   return $item['name'];
 }, $roles);
 
+if (is_multisite() && is_network_admin()) {
+
+  $role_options = array_merge(array(
+    'super-admin' => __('Super Administrator', 'material-wp'),
+  ), $role_options);
+
+} // end if;
+
 $func->createOption(array(
   'id'      => 'material-wp-roles',
   'name'    => __('Roles to Apply', 'material-wp'),
@@ -429,35 +437,39 @@ $func->createOption(array(
 
 global $pagenow;
 
-$users = $pagenow == 'admin.php' && isset($_GET['page']) && $_GET['page'] == 'material-wp_settings' ? get_users(array(
-  'blog_id' => get_current_blog_id(),
-)) : array();
+if (!is_multisite() || !is_network_admin()) {
 
-$user_options = array();
+  $users = $pagenow == 'admin.php' && isset($_GET['page']) && $_GET['page'] == 'material-wp_settings' ? get_users(array(
+    'blog_id' => get_current_blog_id(),
+  )) : array();
 
-foreach($users as $item) {
+  $user_options = array();
 
-  if (is_multisite()) {
+  foreach($users as $item) {
 
-    $user_options[$item->ID] = sprintf("%s", $item->display_name);
-    
-  } else {
-    
-    $user_options[$item->ID] = sprintf("%s (%s)", $item->display_name, implode(', ', $item->roles));
+    if (is_multisite()) {
 
-  }
+      $user_options[$item->ID] = sprintf("%s", $item->display_name);
+      
+    } else {
+      
+      $user_options[$item->ID] = sprintf("%s (%s)", $item->display_name, implode(', ', $item->roles));
 
-} // end foreach;
+    }
 
-$func->createOption(array(
-  'id'      => 'material-wp-user',
-  'name'    => __('Users to Apply', 'material-wp'),
-  'desc'    => __('Select the user to apply Material WP. Do not select anything to apply to all.', 'material-wp'),
-  'type'    => 'multicheck',
-  'default' => array(),
-  'options' => $user_options,
-  'select_all' => true,
-));
+  } // end foreach;
+
+  $func->createOption(array(
+    'id'      => 'material-wp-user',
+    'name'    => __('Users to Apply', 'material-wp'),
+    'desc'    => __('Select the user to apply Material WP. Do not select anything to apply to all.', 'material-wp'),
+    'type'    => 'multicheck',
+    'default' => array(),
+    'options' => $user_options,
+    'select_all' => true,
+  ));
+
+} // end if;
 
 // Save Button
 $func->createOption(array(
